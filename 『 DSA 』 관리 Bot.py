@@ -2,10 +2,13 @@ pip install asyncio
 pip install discord
 import asyncio
 import discord
+import os
+
 
 app = discord.Client()
 
-token = "NjY1NzgyODc4NDc0NjAwNDU4.Xhq1PQ._5kq5JnsP4-nWiZXm7-zkZ6OAMY"
+access_token = os.environ["BOT_TOKEN"]
+token = "(access_token)"
 
 @app.event
 async def on_ready():
